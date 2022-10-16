@@ -10,8 +10,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { PathName } from "routers/types";
 
-//export type SiteHeaders = "Header 1" | "Header 2" | "Header 3";
-export type SiteHeaders = "Header 3";
+export type SiteHeaders = "Header 1" | "Header 2" | "Header 3";
 
 interface HomePageItem {
   name: string;
@@ -171,7 +170,7 @@ const SiteHeader = () => {
                         <a
                           className="flex items-center justify-center w-full px-4 py-2 !rounded-xl text-sm font-medium bg-primary-6000 text-white hover:bg-primary-700"
                           href={
-                            "https://themeforest.net/item/chisfis-online-booking-react-template/33515927"
+                            "#"
                           }
                           target="_blank"
                           rel="noopener noreferrer"
