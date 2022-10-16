@@ -112,6 +112,11 @@ const HeroSearchForm2Mobile = () => {
                         <Tab.Panels className="flex-1 overflow-y-auto py-4">
                           <Tab.Panel>
                             <div className="transition-opacity animate-[myblur_0.4s_ease-in-out]">
+                              <FlightSearchForm />
+                            </div>
+                          </Tab.Panel>
+                          <Tab.Panel>
+                            <div className="transition-opacity animate-[myblur_0.4s_ease-in-out]">
                               <StaySearchForm />
                             </div>
                           </Tab.Panel>
@@ -123,11 +128,6 @@ const HeroSearchForm2Mobile = () => {
                           <Tab.Panel>
                             <div className="transition-opacity animate-[myblur_0.4s_ease-in-out]">
                               <CarsSearchForm />
-                            </div>
-                          </Tab.Panel>
-                          <Tab.Panel>
-                            <div className="transition-opacity animate-[myblur_0.4s_ease-in-out]">
-                              <FlightSearchForm />
                             </div>
                           </Tab.Panel>
                         </Tab.Panels>
