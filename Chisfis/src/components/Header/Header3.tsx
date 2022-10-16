@@ -24,12 +24,12 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
   const [showHeroSearch, setShowHeroSearch] =
     useState<StaySearchFormFields | null>();
   //
-  const [currentTab, setCurrentTab] = useState<SearchTab>("Stays");
+  const [currentTab, setCurrentTab] = useState<SearchTab>("Flights");
 
   //
   useOutsideAlerter(headerInnerRef, () => {
     setShowHeroSearch(null);
-    setCurrentTab("Stays");
+    setCurrentTab("Flights");
   });
 
   let location = useLocation();
@@ -105,6 +105,7 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
           >
             Flights
           </span>
+          <span className="h-5 w-[1px] bg-neutral-300 dark:bg-neutral-700"></span>
           <span
             onClick={() => setShowHeroSearch("location")}
             className="block pl-5 pr-4 cursor-pointer py-3"
