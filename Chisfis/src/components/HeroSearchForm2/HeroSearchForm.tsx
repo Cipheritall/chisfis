@@ -2,7 +2,7 @@ import React, { FC, useEffect, useState } from "react";
 import ExperiencesSearchForm from "./ExperiencesSearchForm";
 import StaySearchForm, { StaySearchFormFields } from "./StaySearchForm";
 import RentalCarSearchForm from "./RentalCarSearchForm";
-import FlightSearchForm from "./FlightSearchForm";
+import FlightSearchForm, {FlightSearchFormFields } from "./FlightSearchForm";
 
 export type SearchTab = "Stays" | "Experiences" | "Cars" | "Flights";
 
@@ -10,13 +10,13 @@ export interface HeroSearchFormProps {
   className?: string;
   defaultTab?: SearchTab;
   onTabChange?: (tab: SearchTab) => void;
-  defaultFieldFocus?: StaySearchFormFields;
+  defaultFieldFocus?: FlightSearchFormFields;
 }
 const TABS: SearchTab[] = ["Stays", "Experiences", "Cars", "Flights"];
 
 const HeroSearchForm: FC<HeroSearchFormProps> = ({
   className = "",
-  defaultTab = "Stays",
+  defaultTab = "Flights",
   onTabChange,
   defaultFieldFocus,
 }) => {
