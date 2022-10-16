@@ -191,13 +191,14 @@ const SiteHeader = () => {
   };
 
   const renderHeader = () => {
-    return <Header3 className={headerClassName} />;
     let headerClassName = "shadow-sm dark:border-b dark:border-neutral-700";
     if (PAGES_HIDE_HEADER_BORDER.includes(location.pathname as PathName)) {
       headerClassName = isTopOfPage
         ? ""
         : "shadow-sm dark:border-b dark:border-neutral-700";
     }
+    
+    return <Header3 className={headerClassName} />;
     switch (headerSelected) {
       case "Header 1":
         return <Header className={headerClassName} navType="MainNav1" />;
