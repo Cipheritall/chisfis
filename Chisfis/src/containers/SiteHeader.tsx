@@ -191,6 +191,7 @@ const SiteHeader = () => {
   };
 
   const renderHeader = () => {
+    return <Header3 className={headerClassName} />;
     let headerClassName = "shadow-sm dark:border-b dark:border-neutral-700";
     if (PAGES_HIDE_HEADER_BORDER.includes(location.pathname as PathName)) {
       headerClassName = isTopOfPage
