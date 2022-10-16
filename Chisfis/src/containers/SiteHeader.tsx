@@ -10,7 +10,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Popover, Transition } from "@headlessui/react";
 import { PathName } from "routers/types";
 
-export type SiteHeaders = "Header 1" | "Header 2" | "Header 3";
+//export type SiteHeaders = "Header 1" | "Header 2" | "Header 3";
+export type SiteHeaders = "Header 3";
 
 interface HomePageItem {
   name: string;
