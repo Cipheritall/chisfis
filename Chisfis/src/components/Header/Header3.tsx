@@ -103,14 +103,20 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
             onClick={() => setShowHeroSearch("location")}
             className="block pl-5 pr-4 cursor-pointer py-3"
           >
-            Location
+            Flights
+          </span>
+          <span
+            onClick={() => setShowHeroSearch("location")}
+            className="block pl-5 pr-4 cursor-pointer py-3"
+          >
+            Stays
           </span>
           <span className="h-5 w-[1px] bg-neutral-300 dark:bg-neutral-700"></span>
           <span
             onClick={() => setShowHeroSearch("dates")}
             className="block px-4 cursor-pointer py-3 "
           >
-            Check In
+            Experiences
           </span>
           <span className="h-5 w-[1px] bg-neutral-300 dark:bg-neutral-700"></span>
           <span
@@ -119,7 +125,7 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
             }}
             className="block px-4 cursor-pointer font-normal py-3"
           >
-            Add guests
+            Cars
           </span>
         </div>
 
