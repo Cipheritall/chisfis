@@ -25,6 +25,7 @@ const HeroSearchForm2Mobile = () => {
   }
 
   const renderButtonOpenModal = () => {
+    return (<></>);
     return (
       <button
         onClick={openModal}
@@ -85,7 +86,7 @@ const HeroSearchForm2Mobile = () => {
                       </div>
 
                       <Tab.List className="pt-12 flex w-full justify-center font-semibold text-sm sm:text-base text-neutral-500 dark:text-neutral-400 space-x-6 sm:space-x-8">
-                        {["Stay", "Experiences", "Cars", "Flights"].map(
+                        {["Flights","Stay", "Experiences", "Cars"].map(
                           (item, index) => (
                             <Tab key={index} as={Fragment}>
                               {({ selected }) => (
