@@ -14,7 +14,7 @@ export interface HeroSearchFormProps {
 
 const HeroSearchForm: FC<HeroSearchFormProps> = ({
   className = "",
-  currentTab = "Stays",
+  currentTab = "Flight",
   currentPage,
 }) => {
   const tabs: SearchTab[] = ["Stays", "Experiences", "Cars", "Flights"];

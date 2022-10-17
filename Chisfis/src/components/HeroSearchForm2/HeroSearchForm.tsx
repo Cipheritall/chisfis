@@ -12,7 +12,7 @@ export interface HeroSearchFormProps {
   onTabChange?: (tab: SearchTab) => void;
   defaultFieldFocus?: StaySearchFormFields;
 }
-const TABS: SearchTab[] = ["Stays", "Experiences", "Cars", "Flights"];
+const TABS: SearchTab[] = ["Flights","Stays", "Experiences", "Cars"];
 
 const HeroSearchForm: FC<HeroSearchFormProps> = ({
   className = "",
