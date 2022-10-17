@@ -25,7 +25,6 @@ const HeroSearchForm2Mobile = () => {
   }
 
   const renderButtonOpenModal = () => {
-    return (<></>);
     return (
       <button
         onClick={openModal}
