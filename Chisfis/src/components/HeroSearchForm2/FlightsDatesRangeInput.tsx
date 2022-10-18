@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import {
   AnchorDirectionShape,
   DateRangePicker,
+  DatePicker,
   FocusedInputShape,
 } from "react-dates";
 import { FC } from "react";
@@ -257,15 +258,14 @@ const FlightsDatesRangeInput: FC<FlightsDatesRangeInputProps> = ({
       }`}
     >
       <div className="absolute inset-0 flex">
-        <DateRangePicker
+        <DatePicker
           startDate={stateDate.startDate}
-          showOneCalendar
-          endDate={stateDate.endDate}
+          //endDate={stateDate.endDate}
           focusedInput={focusedInput}
           onDatesChange={(date) => setStateDate(date)}
           onFocusChange={handleDateFocusChange}
           startDateId={startDateId}
-          endDateId={endDateId}
+          //endDateId={endDateId}
           daySize={windowSize.width > 500 ? 48 : undefined}
           orientation={"horizontal"}
           showClearDates
