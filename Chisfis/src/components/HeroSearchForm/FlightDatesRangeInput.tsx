@@ -249,8 +249,7 @@ const FlightDatesRangeInput: FC<FlightDatesRangeInputProps> = ({
               />
             </svg>
           </div>
-          {/* Change later with round trip condition */}
-          if (false){
+          {/* Change later with round trip condition        
             <div className="flex-1">
               <div className="absolute inset-0" />
 
@@ -266,7 +265,7 @@ const FlightDatesRangeInput: FC<FlightDatesRangeInputProps> = ({
                 {stateDate.endDate ? "Drop off" : `Add date`}
               </span>
             </div>
-          }
+           */}
         </div>
         {hasButtonSubmit && (
           <div className="pr-2 xl:pr-4 relative z-20">
