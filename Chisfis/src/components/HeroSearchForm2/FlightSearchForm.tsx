@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import LocationInput from "./LocationInput";
 import { FocusedInputShape } from "react-dates";
-import RentalCarDatesRangeInput from "./RentalCarDatesRangeInput";
+import FlightsDatesRangeInput from "./FlightsDatesRangeInput";
 import { FC } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
