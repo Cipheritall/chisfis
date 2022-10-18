@@ -61,13 +61,13 @@ const HeroSearchForm: FC<HeroSearchFormProps> = ({
   const renderForm = () => {
     switch (tabActive) {
       case "Stays":
-        return <StaySearchForm />;
+        return <StaySearchForm defaultFieldFocus={defaultFieldFocus} />;
       case "Experiences":
         return <ExperiencesSearchForm />;
       case "Cars":
         return <RentalCarSearchForm />;
       case "Flights":
-        return <FlightSearchForm defaultFieldFocus={defaultFieldFocus} />;
+        return <FlightSearchForm />;
 
       default:
         return null;
