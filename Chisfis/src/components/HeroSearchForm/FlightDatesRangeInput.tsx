@@ -220,6 +220,11 @@ const FlightDatesRangeInput: FC<FlightDatesRangeInputProps> = ({
             {stateDate.startDate ? "Pick up" : `Add date`}
           </span>
         </div>
+        {hasButtonSubmit && (
+        <div className="pr-2 xl:pr-4 relative z-20">
+            <ButtonSubmit href={buttonSubmitHref} />
+        </div>
+        )}
       </div>
     );
   };
@@ -248,8 +253,7 @@ const FlightDatesRangeInput: FC<FlightDatesRangeInputProps> = ({
                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
-          </div>
-          {/* Change later with round trip condition        
+          </div>    
             <div className="flex-1">
               <div className="absolute inset-0" />
 
@@ -265,7 +269,6 @@ const FlightDatesRangeInput: FC<FlightDatesRangeInputProps> = ({
                 {stateDate.endDate ? "Drop off" : `Add date`}
               </span>
             </div>
-           */}
         </div>
         {hasButtonSubmit && (
           <div className="pr-2 xl:pr-4 relative z-20">
@@ -309,7 +312,7 @@ const FlightDatesRangeInput: FC<FlightDatesRangeInputProps> = ({
 
       <div className={`flex-1 ${wrapFieldClassName}`}>
         {renderInputpickUpDate()}
-        {renderInputdropOffDate()}
+        {/* {renderInputdropOffDate()} */}
       </div>
     </div>
   );
