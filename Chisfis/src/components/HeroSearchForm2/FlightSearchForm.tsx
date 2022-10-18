@@ -59,7 +59,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
   >(null);
   const [dropOffLocationType, setDropOffLocationType] = useState<
     "roundTrip" | "oneWay" | ""
-  >("roundTrip");
+  >("oneWay");
   const [guests, setGuests] = useState(1);
   const [flightClassState, setFlightClassState] = useState("Economy");
 
