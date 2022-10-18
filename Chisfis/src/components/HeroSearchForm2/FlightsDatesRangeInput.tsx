@@ -258,7 +258,7 @@ const FlightsDatesRangeInput: FC<FlightsDatesRangeInputProps> = ({
       <div className="absolute inset-0 flex">
         <DateRangePicker
           startDate={stateDate.startDate}
-          singleDatePicker={}
+          singleDatePicker={"true"}
           endDate={stateDate.endDate}
           focusedInput={focusedInput}
           onDatesChange={(date) => setStateDate(date)}
