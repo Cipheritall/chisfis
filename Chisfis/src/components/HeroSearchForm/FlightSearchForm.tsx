@@ -240,7 +240,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({ haveDefaultValue }) => {
                 autoFocus={fieldFocused === "dropOffInput"}
               />
             </div>
-            <FlightsDatesRangeInput
+            <FlightDatesRangeInput
               defaultDateValue={dateRangeValue}
               defaultTimeValue={timeRangeValue}
               defaultFocus={
