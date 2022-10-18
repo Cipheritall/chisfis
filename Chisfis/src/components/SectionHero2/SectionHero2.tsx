@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import imagePng from "images/hero-right-3.png";
+import imageTemplePng from "images/hero-right_temple.png";
 import HeroRealEstateSearchForm from "components/HeroSearchForm/HeroRealEstateSearchForm";
 
 export interface SectionHero2Props {
@@ -16,7 +17,7 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "", children }) => {
       <div className="absolute inset-y-0 w-5/6 xl:w-3/4 right-0 flex-grow">
         <img
           className="absolute inset-0 object-cover w-full h-full"
-          src={imagePng}
+          src={imageTemplePng}
           alt="hero"
         />
       </div>
