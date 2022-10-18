@@ -1,7 +1,7 @@
 import { DateRage } from "components/HeroSearchForm/StaySearchForm";
 import React, { useState } from "react";
 import LocationInput from "./LocationInput";
-import StayDatesRangeInput from "./StayDatesRangeInput";
+import FlightDatesRangeInput from "./FlightDatesRangeInput";
 import GuestsInput, { GuestsObject } from "./GuestsInput";
 
 const FlightSearchForm = () => {
@@ -122,7 +122,7 @@ const FlightSearchForm = () => {
             <span>{dateSelected || "Add date"}</span>
           </button>
         ) : (
-          <StayDatesRangeInput
+          <FlightDatesRangeInput
             defaultValue={dateRangeValue}
             onChange={setDateRangeValue}
           />
