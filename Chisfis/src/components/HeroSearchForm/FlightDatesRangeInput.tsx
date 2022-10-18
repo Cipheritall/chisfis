@@ -249,21 +249,24 @@ const FlightDatesRangeInput: FC<FlightDatesRangeInputProps> = ({
               />
             </svg>
           </div>
-          <div className="flex-1">
-            <div className="absolute inset-0" />
+          {/* Change later with round trip condition */}
+          if (false){
+            <div className="flex-1">
+              <div className="absolute inset-0" />
 
-            <div className="inline-flex items-center text-base xl:text-lg font-semibold">
-              <span className="flex-shrink-0">
-                {stateDate.endDate
-                  ? stateDate.endDate.format("DD MMM")
-                  : "Drop off"}
+              <div className="inline-flex items-center text-base xl:text-lg font-semibold">
+                <span className="flex-shrink-0">
+                  {stateDate.endDate
+                    ? stateDate.endDate.format("DD MMM")
+                    : "Drop off"}
+                </span>
+                {stateDate.endDate && renderEditTime("dropOff")}
+              </div>
+              <span className="block mt-1 text-sm text-neutral-400 font-light leading-none">
+                {stateDate.endDate ? "Drop off" : `Add date`}
               </span>
-              {stateDate.endDate && renderEditTime("dropOff")}
             </div>
-            <span className="block mt-1 text-sm text-neutral-400 font-light leading-none">
-              {stateDate.endDate ? "Drop off" : `Add date`}
-            </span>
-          </div>
+          }
         </div>
         {hasButtonSubmit && (
           <div className="pr-2 xl:pr-4 relative z-20">
