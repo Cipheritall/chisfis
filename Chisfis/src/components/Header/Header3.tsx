@@ -10,8 +10,6 @@ import NotifyDropdown from "./NotifyDropdown";
 import AvatarDropdown from "./AvatarDropdown";
 import MenuBar from "shared/MenuBar/MenuBar";
 import { StaySearchFormFields } from "components/HeroSearchForm2/StaySearchForm";
-import { FlightSearchFormFields } from "components/HeroSearchForm2/FlightSearchForm";
-
 import HeroSearchForm2MobileFactory from "components/HeroSearchForm2Mobile/HeroSearchForm2MobileFactory";
 
 interface Header3Props {
@@ -24,7 +22,7 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
   const headerInnerRef = useRef<HTMLDivElement>(null);
   //
   const [showHeroSearch, setShowHeroSearch] =
-    useState<FlightSearchFormFields | null>();
+    useState<StaySearchFormFields | null>();
   //
   const [currentTab, setCurrentTab] = useState<SearchTab>("Flights");
 
