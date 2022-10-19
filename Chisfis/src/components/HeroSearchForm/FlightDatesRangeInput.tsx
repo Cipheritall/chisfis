@@ -220,11 +220,6 @@ const FlightDatesRangeInput: FC<FlightDatesRangeInputProps> = ({
             {stateDate.startDate ? "Pick up" : `Add date`}
           </span>
         </div>
-        {hasButtonSubmit && (
-        <div className="pr-2 xl:pr-4 relative z-20">
-            <ButtonSubmit href={buttonSubmitHref} />
-        </div>
-        )}
       </div>
     );
   };
@@ -312,7 +307,7 @@ const FlightDatesRangeInput: FC<FlightDatesRangeInputProps> = ({
 
       <div className={`flex-1 ${wrapFieldClassName}`}>
         {renderInputpickUpDate()}
-        {/* {renderInputdropOffDate()} */}
+        {renderInputdropOffDate()} 
       </div>
     </div>
   );
