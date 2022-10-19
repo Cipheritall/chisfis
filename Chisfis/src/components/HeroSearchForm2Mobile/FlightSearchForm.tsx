@@ -1,7 +1,7 @@
 import { DateRage } from "components/HeroSearchForm/StaySearchForm";
 import React, { useState } from "react";
 import LocationInput from "./LocationInput";
-import StayDatesRangeInput from "./StayDatesRangeInput";
+import FlightDatesRangeInput from "./FlightDatesRangeInput";
 import GuestsInput, { GuestsObject } from "./GuestsInput";
 
 const FlightSearchForm = () => {
@@ -19,7 +19,7 @@ const FlightSearchForm = () => {
   });
   const [dropOffLocationType, setDropOffLocationType] = useState<
     "Round-trip" | "One-way" | ""
-  >("Round-trip");
+  >("One-way");
   const [flightClassState, setFlightClassState] = useState("Economy");
 
   const [guestInput, setGuestInput] = useState<GuestsObject>({
@@ -91,9 +91,10 @@ const FlightSearchForm = () => {
       </div>
     );
   };
-
   const renderInputDates = () => {
+    //const isActive = fieldNameShow === "dates";
     const isActive = fieldNameShow === "dates";
+    
     const startDateString = dateRangeValue.startDate?.format("MMM DD");
     const endDateString =
       dateRangeValue.endDate?.get("month") !==
@@ -121,7 +122,7 @@ const FlightSearchForm = () => {
             <span>{dateSelected || "Add date"}</span>
           </button>
         ) : (
-          <StayDatesRangeInput
+          <FlightDatesRangeInput
             defaultValue={dateRangeValue}
             onChange={setDateRangeValue}
           />
