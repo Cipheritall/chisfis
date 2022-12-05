@@ -30,6 +30,7 @@ const MainNav1: FC<MainNav1Props> = ({ className = "" }) => {
             <SearchDropdown />
             <div className="px-1" />
             <ButtonPrimary href="/login">Sign up</ButtonPrimary>
+            
           </div>
           <div className="flex xl:hidden items-center">
             <SwitchDarkMode />

@@ -46,7 +46,6 @@ import ListingFlightsPage from "containers/ListingFlightsPage/ListingFlightsPage
 import FooterNav from "components/FooterNav";
 import useWindowSize from "hooks/useWindowResize";
 import PageHome3 from "containers/PageHome/PageHome3";
-import LoginButton from "components/Authentification/GoogleAuths"
 
 export const pages: Page[] = [
   { path: "/", exact: true, component: PageHome },
@@ -55,7 +54,6 @@ export const pages: Page[] = [
   { path: "/home-2", component: PageHome2 },
   { path: "/home-3", component: PageHome3 },
   //
-  { path: "/auth", component: LoginButton },
   { path: "/listing-stay", component: ListingStayPage },
   { path: "/listing-stay-map", component: ListingStayMapPage },
   { path: "/listing-stay-detail", component: ListingStayDetailPage },
